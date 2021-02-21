@@ -1,0 +1,265 @@
+body {
+    margin: 0; 
+    background: #6C5151;
+}
+
+/* #region Nav-bar */
+.burgerNav {
+    height: 4rem;
+    padding-right: 1rem;
+    position: sticky;
+    top: 0; 
+    overflow: hidden;
+    z-index: 10000; 
+}
+
+.topNav {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    height: 4rem;
+}
+
+main i {
+    cursor: pointer;
+}
+
+h4 {
+    display: flex;
+    justify-content: flex-end;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+/* #endregion */
+
+/*#region Project */
+.projectArea {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 7rem;
+    justify-content: space-between;
+}
+
+
+/* PROJECT SECTION */
+#project {
+    flex-wrap: wrap;
+}
+
+.projectContainer {
+    position: relative;
+    width: 25%;
+    padding: 1rem;
+}
+
+.computerPicture {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    /* height: auto; */
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.hoverEffects {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+    transform: translate(-50%, -50%); /*taken from w3 schools*/
+    -ms-transform: translate(-50%, -50%); /*taken from w3 schools*/
+    text-align: center;
+}
+.projectTitle {
+    background: rgb(134, 91, 121);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.projectContainer:hover .computerPicture {
+    opacity: 0.3;
+}
+  
+.projectContainer:hover .hoverEffects {
+    opacity: 1;
+}
+/* #endregion */
+
+/*#region About */
+.aboutArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about1, .about2, .about3, .about4 {
+    display: flex;
+    padding: 1rem;
+    width: 25rem;
+    height: 6rem;
+}
+.about1 {
+    background: lightsalmon;
+    margin-right: 50%;
+}
+.about2 {
+    background: blueviolet;
+    justify-content: flex-end;
+    margin-left: 50%;
+}
+.about3 {
+    background: lightsalmon;
+    margin-right: 50%;
+}
+.about4 {
+    background: blueviolet;
+    margin-left: 50%;
+
+
+}
+/*#endregion  */
+
+/* #region Testimonails */
+.aboutSlides {
+    background: rgb(134, 91, 121);;
+}
+  
+.text {
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+    padding: 1rem;
+}
+  
+.aboutSlideshow {
+    padding:  0 3rem; 
+    position: relative;
+}
+  
+/* Next & previous buttons. */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 3rem;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* #endregion */
+
+/*#region Contact */
+.contactArea {
+    display: flex;
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+}
+.circle1 {
+    background: blue;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle2 {
+    background: green;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100rem;
+}
+.circle3 {
+    background: red;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100rem;
+}
+.circle4 {
+    background: pink;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+}
+.circle5 {
+    background: lightgreen;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+}
+.circle6 {
+    background: lightsalmon;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+}
+/*#endregion */
+
+/*#region footer */
+footer {
+    background: grey;
+}
+
+footer > a{
+    height: 2rem;
+    padding: 0.5rem;
+}
+/*#endregion */
+
+/* REUSABLE CLASSES  */
+
+.flex {
+    display: flex;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
