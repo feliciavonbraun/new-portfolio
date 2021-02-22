@@ -11,5 +11,6 @@ menuIcon1.onclick = function() {
     } else {
         burgerNav.style.height = '100%';
         burgerNav.style.background = "#673030";    
+        burgerNav.style.border.radius = "10rem";    
     }
 }

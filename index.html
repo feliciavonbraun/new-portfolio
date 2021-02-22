@@ -19,7 +19,7 @@
     <main>
 
         <!-- STICKY NAV BAR -->
-        <nav class="burgerNav" style="background: green;">
+        <!-- <nav class="burgerNav" style="background: green;">
             <div class="topNav">
                 <i id="menu1" class="material-icons">menu</i> 
             </div>
@@ -30,7 +30,22 @@
                 <a href="contact.html"><h4>Contact</h4></a>
 
             </div>
-        </nav>
+        </nav> -->
+
+        <!-- New menu ikon -->
+        <div id="circularMenu" class="circular-menu">
+            <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+              <i class="fa fa-plus material-icons">menu</i>
+            </a>
+          
+            <menu class="items-wrapper">
+              <a href="#" class="menu-item fa">Projects</a>
+              <a href="#" class="menu-item fa">About</a>
+              <a href="#" class="menu-item fa ">Testimonial</a>
+              <a href="#" class="menu-item fa fa-linkedin">Contact</a>
+            </menu>
+        </div>
+
         <!-- PROJECTS -->
         <h2 class="flex center">Project</h2>
         <!-- <nav class="flex center">
