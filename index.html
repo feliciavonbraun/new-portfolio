@@ -7,6 +7,7 @@
     <title>Felicia von Braun</title>
     <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="JS/navBar.js"></script>
     <script defer src="JS/testimonials.js"></script>
@@ -14,24 +15,6 @@
 </head>
 <body>
     <header>
-
-    </header>
-    <main>
-
-        <!-- STICKY NAV BAR -->
-        <!-- <nav class="burgerNav" style="background: green;">
-            <div class="topNav">
-                <i id="menu1" class="material-icons">menu</i> 
-            </div>
-            <div id="testingNav">
-                <a href="index.html"><h4>Home</h4></a>
-                <a href="#about"><h4>About</h4></a>
-                <a href="#project"><h4>Projects</h4></a>
-                <a href="contact.html"><h4>Contact</h4></a>
-
-            </div>
-        </nav> -->
-
         <!-- New menu ikon -->
         <div id="circularMenu" class="circular-menu">
             <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
@@ -39,15 +22,21 @@
             </a>
           
             <menu class="items-wrapper">
-              <a href="#" class="menu-item fa">Projects</a>
-              <a href="#" class="menu-item fa">About</a>
-              <a href="#" class="menu-item fa ">Testimonial</a>
-              <a href="#" class="menu-item fa fa-linkedin">Contact</a>
+              <a href="#projects" class="menu-item fa">Projects</a>
+              <a href="#about" class="menu-item fa">About</a>
+              <a href="#testimonials" class="menu-item fa ">Testimonial</a>
+              <a href="#contact" class="menu-item fa fa-linkedin">Contact</a>
             </menu>
         </div>
+        <div>
+            <h1 class="flex">Felicia von Braun </h1>
+            <h2 class="myTitle">Front End Developer</h2>	 </br>
+        </div>
+    </header>
+    <main>
 
         <!-- PROJECTS -->
-        <h2 class="flex center">Project</h2>
+        <h2 id="projects" class="flex center">Projects</h2>
         <!-- <nav class="flex center">
             <span>All</span>
             <span>Websites</span>
@@ -58,79 +47,82 @@
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/swedbank.png" alt="Swedbank Project">
                 <div class="hoverEffects">
-                    <a href="https://feliciavonbraun.github.io/swedbank-homepage/"><p class="projectTitle">Swedbank</p></a>
+                    <a href="https://feliciavonbraun.github.io/swedbank-homepage/" target="_blank"><p class="projectTitle">Swedbank</p></a>
                 </div>
             </div>
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/gangemad.png" alt="Gångemad Project">
                 <div class="hoverEffects">
-                    <a href="https://feliciavonbraun.github.io/Gangemad/index.html"><p class="projectTitle">Gångemad</p></a>
+                    <a href="https://feliciavonbraun.github.io/Gangemad/index.html" target="_blank"><p class="projectTitle">Gångemad</p></a>
                 </div>
             </div>
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/flightgame.png" alt="JavaScript Project">
                 <div class="hoverEffects">
-                    <a href="https://feliciavonbraun.github.io/javascript-game/"><p class="projectTitle">JavaScript Game</p></a>
+                    <a href="https://feliciavonbraun.github.io/javascript-game/" target="_blank"><p class="projectTitle">JavaScript Game</p></a>
                 </div>
             </div>
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/calendar.png" alt="Calendar Project">
                 <div class="hoverEffects">
-                    <a href="https://feliciavonbraun.github.io/schema/"><p class="projectTitle">Calendar</p></a>
+                    <a href="https://feliciavonbraun.github.io/schema/" target="_blank"><p class="projectTitle">Calendar</p></a>
                 </div>
             </div>
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/ballgame.png" alt="Balla:Ur">
                 <div class="hoverEffects">
-                    <a href="https://balla-ur-online.netlify.app/"><p class="projectTitle">Balla:Ur</p></a>
+                    <a href="https://balla-ur-online.netlify.app/" target="_blank"><p class="projectTitle">Balla:Ur</p></a>
                 </div>
             </div>
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/quizapp.png" alt="Higher or Lower">
                 <div class="hoverEffects">
-                    <a href="https://higerorlower.netlify.app/gameover"><p class="projectTitle">Higher or Lower</p></a>
+                    <a href="https://higerorlower.netlify.app/gameover" target="_blank"><p class="projectTitle">Higher or Lower</p></a>
                 </div>
             </div>
         </div>
         </div>
         <!-- ABOUT -->
-        <div class="aboutArea">
+        <div id="about" class="aboutArea">
             <h2 class="flex center">About</h2>
             <div class="about1">
-                <img src="images/malta-s.jpeg" alt="">
+                <img src="images/malta-s2.jpeg" alt="">
             </div>
             <div class="about2">
-                <img src="images/traveling-s.jpeg" alt="">
+                <img src="images/traveling-s2.jpeg" alt="">
             </div>
             <div class="about3">
-                <img src="images/nature-s.jpg" alt="">
+                <img src="images/nature-s2.jpg" alt="">
             </div>
             <div class="about4">
-                <img src="images/temp-s.jpeg" alt="">
+                <img src="images/temp-s2.jpeg" alt="">
+                <a href="./ProfileCV.pdf" target="_blank" rel="noopener" class="" >View CV...</a>
             </div>
         </div>
+
         <!-- TESTIMONIALS -->
-        <div class="aboutSlideshow">
+        <div class="testimonailsSlideshow">
+            <h2 id="testimonials">Testimonials</h2>
             <div class="center aboutSlides fade">
                 <!-- <img src="images/malta.jpeg" alt="Streets of Malta" style="width:50%"> -->
-                <div class="center text">
+                <div class="center testimonailsText">
                     I have been living and working on Malta for 1.5 years. Which was so much fun and I learned so much,  a great experience. 
                 </div>
             </div>
             <div class="center aboutSlides fade">
-                <div class="center text">
+                <div class="center testimonailsText">
                     Sounds like a cliche to say I love traveling but so be it. Together with my backpack and friends I have been traveling around the world. I love exploring every different area with people and nature. Everything from jumping out of a plane to diving down with the fishes.
                 </div>
                 <!-- <img src="images/traveling.jpeg" alt="Felicia exploring" style="width: 50%"> -->
             </div>
             <div class="center aboutSlides fade ">
                 <!-- <img src="images/nature.jpg" alt="Felicias mom between fields" style="width:50%"> -->
-                <div class="center text">
+                <div class="center testimonailsText">
                     When lack of inspiration I always turn to nature and with my family and friends. There is no no such thing as watching every element and all the lives of nature.
                 </div>
             </div>
             <div class="center aboutSlides fade ">
-                <div class="center text">
+                <div class="center testimonailsText">
                     Here you can find and print a PDF with my CV and personal letter. </br>
                 </div>
                 <!-- <img src="images/temp.jpeg" style="width:50%"> -->
@@ -149,28 +141,30 @@
         <!-- CONTACT -->
         <div class="contactArea" style="background: darkgrey;">
             <div id="circle1" class="circle1 flex center">
-                <h2>Contact</h2>
+
             </div>
             <div id="circle2" class="circle2 flex center">
-                <img src="images/linkedin.png" style="height: 1.6rem;" alt="">
+
             </div>
             <div id="circle3" class="circle3 flex center">
-                <img src="images/maillogo.png" style="height: 2rem;" alt="">
+                <a href="https://github.com/feliciavonbraun"><img src="images/githublogo.png" style="height: 2rem;" alt=""></a>
             </div>
             <div class="circle4 flex center">
-                <img src="images/githublogo.png" alt="">
+                <h2 id="contact">Contact</h2>
             </div>
             <div class="circle5 flex center">
-                <img src="images/githublogo.png" alt="">
+                <a href="https://www.linkedin.com/in/felicia-von-braun-wallin-1b238b1b5/"><img src="images/linkedin.png" style="height: 3rem;" alt=""></a>
             </div>
             <div class="circle6 flex center">
-                <img src="images/githublogo.png" alt="">
+                <a href="mailto:feliciavonbraun@hotmail.com?subject=Front End Developer"> <img src="images/maillogo.png" style="height: 4rem;" alt=""></a>
+                
             </div>
         </div>
     </main>
     <footer class="flex center">
         <a href="https://github.com/feliciavonbraun"></a><img src="images/githublogo.png" alt="GitHub logo"></a>
         <a href="https://github.com/feliciavonbraun"></a><img src="images/linkedin.png" alt="GitHub logo" style="height: 1.6rem;"></a>
+        <i class="material-icons">north</i>
     </footer>
 </body>
 </html>

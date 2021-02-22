@@ -1,47 +1,41 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'EB Garamond', serif;
+}
 body {
     margin: 0; 
     background: #6C5151;
 }
 
-/* #region Nav-bar */
-.burgerNav {
-    height: 10rem;
-    width: 10rem;
-    padding-right: 1rem;
-    position: sticky;
-    top: 0; 
-    overflow: hidden;
-    z-index: 10000; 
-    /* border-radius: 1000rem; */
-    display: flex;
-    justify-content: flex-end;
+/* #region Header */
+header {
+    height: 20rem;
+    margin: 0;
 }
 
-.topNav {
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    height: 4rem;
+h1 {
+    color: rgb(134, 91, 121);
+    font-size: 5rem;
+    margin: 5rem 0 0 3rem;
 }
 
-main i {
-    cursor: pointer;
-}
-
-h4 {
-    display: flex;
-    justify-content: flex-end;
-}
-a:hover {
-    text-decoration: none;
-    color: black;
+.myTitle {
+    color: rgb(134, 91, 121);
+    font-size: 1.2rem;
+    margin: 0 0 0 3rem;
+    line-height: 0;
 }
 /* #endregion */
 
 /* #region NEW menu bar */
+/* denna hover funkar typ inte  */
+a:hover {
+    text-decoration: none;
+    color: blueviolet;
+}
 .circular-menu {
     position: fixed;
-    /* bottom: 1em; */
+    top: 1rem;
     right: 1rem;
 }
   
@@ -119,14 +113,10 @@ a:hover {
     /* background-color: hsla(0,0%,0%,.1); */
     transition: transform .3s ease, background .2s ease;
 }
-
-/* .material-icons {
-    line-height: 0;
-} */
   
-  /* .circular-menu .menu-item:hover {
-    background-color: hsla(0,0%,0%,.3);
-  } */
+/* .menu-item:hover {
+    background: blueviolet;
+} */
   
 .circular-menu.active .menu-item {
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -147,6 +137,7 @@ a:hover {
 .circular-menu.active .menu-item:nth-child(4) {
     transform: translate3d(-0.1em,12em,0);
 }
+
 
 /* #endregion */
 
@@ -214,7 +205,7 @@ a:hover {
     display: flex;
     padding: 1rem;
     width: 25rem;
-    height: 6rem;
+    height: 7rem;
 }
 .about1 {
     background: lightsalmon;
@@ -231,29 +222,35 @@ a:hover {
 }
 .about4 {
     background: blueviolet;
-    margin-left: 50%;
-
-
+    margin-left: 20%;
 }
 /*#endregion  */
 
 /* #region Testimonails */
-.aboutSlides {
-    background: rgb(134, 91, 121);;
-}
-  
-.text {
-    height: 100%;
-    width: 100%;
-    text-align: justify;
-    padding: 1rem;
-}
-  
-.aboutSlideshow {
+.testimonailsSlideshow {
+    background: chartreuse;
     padding:  0 3rem; 
     position: relative;
+    height: 10rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutSlides {
+    background: rgb(134, 91, 121);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 5rem;
 }
   
+.testimonailsText {
+    padding: 1rem;
+}
+
 /* Next & previous buttons. */
 .prev, .next {
     cursor: pointer;
@@ -263,14 +260,16 @@ a:hover {
     margin-top: -22px;
     color: white;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px;
     /* user-select: none; */
 }
   
 /* Position the "next button" to the right */
+.prev {
+    left: 11rem;
+}
 .next {
-    right: 3rem;
-    border-radius: 3px 0 0 3px;
+    right: 11rem;
 }
   
 .prev:hover, .next:hover {
@@ -314,11 +313,11 @@ a:hover {
 /*#region Contact */
 .contactArea {
     display: flex;
-    height: 25rem;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
-.circle1 {
+/* .circle1 {
     background: blue;
     width: 10rem;
     height: 10rem;
@@ -326,37 +325,125 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .circle2 {
     background: green;
     width: 15rem;
     height: 15rem;
     border-radius: 100rem;
+    transform: translate3d(-20rem,2rem,0);
+    z-index: 0;
+
 }
 .circle3 {
     background: red;
     width: 15rem;
     height: 15rem;
     border-radius: 100rem;
+    transform: translate3d(-0.1em,12em,0);
+
 }
 .circle4 {
     background: pink;
     width: 4rem;
     height: 4rem;
     border-radius: 3rem;
+    transform: translate3d(-0.1em,12em,0);
+
 }
 .circle5 {
     background: lightgreen;
     width: 4rem;
     height: 4rem;
     border-radius: 3rem;
+    transform: translate3d(-0.1em,12em,0);
+
 }
 .circle6 {
     background: lightsalmon;
     width: 4rem;
     height: 4rem;
     border-radius: 3rem;
+    transform: translate3d(-0.1em,12em,0);
+} */
+
+/* Ellipse 5 */
+
+.circle1 {
+    position: absolute;
+    width: 311px;
+    height: 325px;
+    left: 472px;
+    top: 2559px;
+    border-radius: 100%;
+    background: #A3793C;
 }
+/* Ellipse 10 */
+
+.circle2 {
+
+    position: absolute;
+    width: 416px;
+    height: 407px;
+    left: 448px;
+    top: 2975px;
+    border-radius: 100%;
+    background: #C4C4C4;
+}
+
+
+/* Ellipse 9 */
+
+.circle3 {
+
+    position: absolute;
+    width: 411px;
+    height: 413px;
+    left: 245px;
+    top: 2722px;
+    border-radius: 100%;
+    background: #673030;
+}
+
+
+/* Ellipse 6 */
+
+.circle4 {
+    position: absolute;
+    width: 366px;
+    height: 368px;
+    left: 528px;
+    top: 2800px;
+    border-radius: 100%;
+    background: #6C5151;
+}
+
+/* Ellipse 7 */
+.circle5 {
+    position: absolute;
+    width: 351px;
+    height: 368px;
+    left: 745px;
+    top: 2582px;
+    border-radius: 100%;
+    background: #684040;
+
+}
+
+/* Ellipse 8 */
+
+.circle6 {
+
+    position: absolute;
+    width: 400px;
+    height: 402px;
+    left: 795px;
+    top: 2907px;
+    border-radius: 100%;
+    background: #A4754A;
+}
+
 /*#endregion */
 
 /*#region footer */
