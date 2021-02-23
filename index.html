@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <!-- New menu ikon -->
+        <!-- STICKY MENU -->
         <div id="circularMenu" class="circular-menu">
             <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
               <i class="fa fa-plus material-icons">menu</i>
@@ -30,7 +30,7 @@
         </div>
         <div>
             <h1 class="flex">Felicia von Braun </h1>
-            <h2 class="myTitle">Front End Developer</h2>	 </br>
+            <h2 class="myTitle">Front End Developer</h2>
         </div>
     </header>
     <main>
@@ -45,25 +45,25 @@
         <div class="projectArea flex" style="background: darkblue;">            
 
             <div class="projectContainer">
-                <img class="computerPicture" src="./images/swedbank.png" alt="Swedbank Project">
+                <img class="computerPicture" src="./images/swedbank.png" alt="Swedbank">
                 <div class="hoverEffects">
                     <a href="https://feliciavonbraun.github.io/swedbank-homepage/" target="_blank"><p class="projectTitle">Swedbank</p></a>
                 </div>
             </div>
             <div class="projectContainer">
-                <img class="computerPicture" src="./images/gangemad.png" alt="Gångemad Project">
+                <img class="computerPicture" src="./images/gangemad.png" alt="Gångemad">
                 <div class="hoverEffects">
                     <a href="https://feliciavonbraun.github.io/Gangemad/index.html" target="_blank"><p class="projectTitle">Gångemad</p></a>
                 </div>
             </div>
             <div class="projectContainer">
-                <img class="computerPicture" src="./images/flightgame.png" alt="JavaScript Project">
+                <img class="computerPicture" src="./images/flightgame.png" alt="Text Based Game">
                 <div class="hoverEffects">
-                    <a href="https://feliciavonbraun.github.io/javascript-game/" target="_blank"><p class="projectTitle">JavaScript Game</p></a>
+                    <a href="https://feliciavonbraun.github.io/javascript-game/" target="_blank"><p class="projectTitle">Text Based Game</p></a>
                 </div>
             </div>
             <div class="projectContainer">
-                <img class="computerPicture" src="./images/calendar.png" alt="Calendar Project">
+                <img class="computerPicture" src="./images/calendar.png" alt="Calendar">
                 <div class="hoverEffects">
                     <a href="https://feliciavonbraun.github.io/schema/" target="_blank"><p class="projectTitle">Calendar</p></a>
                 </div>
@@ -81,32 +81,33 @@
                 </div>
             </div>
         </div>
-        </div>
+        
         <!-- ABOUT -->
         <div id="about" class="aboutArea">
-            <h2 class="flex center">About</h2>
-            <div class="flex column">
 
-                <div class="flexEnd">
-                    <div class="about1 card">
+            <h2 class="flex center">About</h2>
+
+            <div class="flex column">
+                <div class="flexEnd" >
+                    <div class="about1 card" style="background: lightsalmon;">
                         <img src="images/malta-s2.jpeg" alt="Card Back" width="100%">
                         <img src="images/malta.jpeg" class="img-top" alt="Card Front" height="100%">
                     </div>
                 </div>
 
-                <div class="about2 card">
+                <div class="about2 card" style="background: blueviolet;">
                     <img src="images/traveling-s2.jpeg" alt="Card Back" width="100%">
                     <img src="images/traveling.jpeg" class="img-top" alt="Card Front" width="100%">            
                 </div>
            
                 <div class="flexEnd">
-                    <div class="about3 card">
+                    <div class="about3 card" style="background: lightsalmon;">
                         <img src="images/nature-s2.jpg" alt="Card Back" width="100%">
                         <img src="images/nature.jpg" class="img-top" alt="Card Front" width="100%">
                     </div>
                 </div>
 
-                <div class="about4 card">
+                <div class="about4 card" style="background: blueviolet;">
                     <img src="images/temp-s2.jpeg" alt="Card Back" width="100%">
                     <img src="images/temp.jpeg" class="img-top" alt="Card Front" width="100%">
                     
@@ -117,7 +118,9 @@
 
         <!-- TESTIMONIALS -->
         <div class="testimonailsSlideshow">
+
             <h2 id="testimonials">Testimonials</h2>
+
             <div class="center aboutSlides fade">
                 <!-- <img src="images/malta.jpeg" alt="Streets of Malta" style="width:50%"> -->
                 <div class="center testimonailsText">
@@ -153,9 +156,13 @@
                 <span class="dot" onclick="currentSlide(4)"></span> 
             </div>
         </div>
+
+        <!-- SKILLS -->
+     
+
         <!-- CONTACT -->
-        <!-- <div class="contactArea" style="background: darkgrey;">
-            <div id="circle1" class="circle1 flex center">
+        <div class="contactArea" style="background: darkgrey;">
+            <!-- <div id="circle1" class="circle1 flex center">
 
             </div>
             <div id="circle2" class="circle2 flex center">
@@ -171,15 +178,15 @@
                 <a href="https://www.linkedin.com/in/felicia-von-braun-wallin-1b238b1b5/"><img src="images/linkedin.png" class="imgZoom" style="height: 3rem;" alt=""></a>
             </div>
             <div class="circle6 flex center">
-                <a href="mailto:feliciavonbraun@hotmail.com?subject=Front End Developer"> <img src="images/maillogo.png" style="height: 4rem;" alt=""></a>
-                
-            </div>
-        </div> -->
+                <a href="mailto:feliciavonbraun@hotmail.com?subject=Front End Developer"> <img src="images/maillogo.png" style="height: 4rem;" alt=""></a>  
+            </div> -->
+
+        </div>
     </main>
     <footer class="flex center">
+        <a href="#top"><i class="material-icons">north</i></a> 
         <a href="https://github.com/feliciavonbraun"></a><img src="images/githublogo.png" alt="GitHub logo"></a>
         <a href="https://github.com/feliciavonbraun"></a><img src="images/linkedin.png" alt="GitHub logo" style="height: 1.6rem;"></a>
-        <i class="material-icons">north</i>
     </footer>
 </body>
 </html>

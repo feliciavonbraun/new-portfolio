@@ -9,7 +9,7 @@ body {
 
 /* #region Header */
 header {
-    height: 20rem;
+    height: 100vh;
     margin: 0;
 }
 
@@ -149,12 +149,6 @@ a:hover {
     justify-content: space-between;
 }
 
-
-/* PROJECT SECTION */
-#project {
-    flex-wrap: wrap;
-}
-
 .projectContainer {
     position: relative;
     width: 25%;
@@ -181,7 +175,7 @@ a:hover {
     text-align: center;
 }
 .projectTitle {
-    background: rgb(134, 91, 121);
+    background: #673030;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
@@ -207,31 +201,13 @@ a:hover {
 .about1, .about2, .about3, .about4 {
     display: flex;
     padding: 1rem;
-    /* width: 25rem;
-    height: 7rem; */
     transition: transform .2s;
 }
-.about1 {
-    background: lightsalmon;
-    margin-right: 2rem;
+.about1, .about3 {
+    margin-right: 3rem;
 }
-.about2 {
-    background: blueviolet;
-    margin-left: 2rem;
-}
-.about3 {
-    background: lightsalmon;
-    margin-right: 2rem;
-}
-.about4 {
-    background: blueviolet;
-    margin-left: 2rem;
-}
-
-.flexEnd {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.about2, .about4 {
+    margin-left: 3rem;   
 }
 
 .card {
@@ -250,6 +226,7 @@ a:hover {
 .card:hover .img-top {
     display: inline;
 }
+
 
 /*#endregion  */
 
@@ -501,4 +478,9 @@ footer > a{
 .column {
     display: flex;
     flex-direction: column;
+}
+.flexEnd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
