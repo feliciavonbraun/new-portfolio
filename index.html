@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactFigma.css">
+    <!-- <link rel="stylesheet" href="contactRelative.css"> -->
     <script defer src="JS/navBar.js"></script>
     <script defer src="JS/testimonials.js"></script>
     <script defer src="JS/contact.js"></script>
@@ -28,7 +30,7 @@
               <a href="#contact" class="menu-item fa fa-linkedin">Contact</a>
             </menu>
         </div>
-        
+
         <div>
             <h1 class="flex">Felicia von Braun </h1>
             <h2 class="myTitle">Front End Developer</h2>
@@ -66,7 +68,7 @@
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/calendar.png" alt="Calendar">
                 <div class="hoverEffects">
-                    <a href="https://feliciavonbraun.github.io/schema/" target="_blank"><p class="projectTitle">Calendar</p></a>
+                    <a href="https://feliciavonbraun.github.io/calendar/" target="_blank"><p class="projectTitle">Calendar</p></a>
                 </div>
             </div>
             <div class="projectContainer">
@@ -86,8 +88,8 @@
         <!-- ABOUT -->
         <div id="about" class="aboutArea">
 
-            <h2 class="flex center">About</h2>
-
+            <h2 class="aboutTitle">About</h2>
+            
             <div class="flex column">
                 <div class="flexEnd" >
                     <div class="about1 card" style="background: lightsalmon;">
@@ -104,7 +106,13 @@
                 <div class="flexEnd">
                     <div class="about3 card" style="background: lightsalmon;">
                         <img src="images/nature-s2.jpg" alt="Card Back" width="100%">
-                        <img src="images/nature.jpg" class="img-top" alt="Card Front" width="100%">
+                        <div class="img-top">
+                            <img src="images/nature.jpg"  alt="Card Front" width="100%">
+                            <p class="aboutText">
+                                When lack of inspiration I always turn to nature and with my family and friends. 
+                                There is no no such thing as watching every element and all the lives of nature.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -159,28 +167,37 @@
         </div>
 
         <!-- SKILLS -->
-     
+        <div class="skillsArea flex center">
+            <div class ="skill" style="background: blue;"></div>
+            <div class ="skill" style="background: blue;"></div>
+            <div class ="skill" style="background: blue;"></div>
+            <div class ="skill" style="background: blue;"></div>
+        </div>
 
         <!-- CONTACT -->
         <div class="contactArea" style="background: darkgrey;">
-            <!-- <div id="circle1" class="circle1 flex center">
+            
+            <div class="yo">
 
+                <div id="circle1" class="circle1 flex center">
+    
+                </div>
+                <div id="circle2" class="circle2 flex center">
+    
+                </div>
+                <div id="circle3" class="circle3 flex center">
+                    <a href="https://github.com/feliciavonbraun"><img src="images/githublogo.png" style="height: 2rem;" alt=""></a>
+                </div>
+                <div class="circle4 flex center">
+                    <h2 id="contact">Contact</h2>
+                </div>
+                <div class="circle5 flex center">
+                    <a href="https://www.linkedin.com/in/felicia-von-braun-wallin-1b238b1b5/"><img src="images/linkedin.png" class="imgZoom" style="height: 3rem;" alt="LinkedIn"></a>
+                </div>
+                <div class="circle6 flex center">
+                    <a href="mailto:feliciavonbraun@hotmail.com?subject=Front End Developer"> <img src="images/maillogo.png" class="imgZoom" style="height: 4rem;" alt="E-mail me"></a>  
+                </div>
             </div>
-            <div id="circle2" class="circle2 flex center">
-
-            </div>
-            <div id="circle3" class="circle3 flex center">
-                <a href="https://github.com/feliciavonbraun"><img src="images/githublogo.png" style="height: 2rem;" alt=""></a>
-            </div>
-            <div class="circle4 flex center">
-                <h2 id="contact">Contact</h2>
-            </div>
-            <div class="circle5 flex center">
-                <a href="https://www.linkedin.com/in/felicia-von-braun-wallin-1b238b1b5/"><img src="images/linkedin.png" class="imgZoom" style="height: 3rem;" alt=""></a>
-            </div>
-            <div class="circle6 flex center">
-                <a href="mailto:feliciavonbraun@hotmail.com?subject=Front End Developer"> <img src="images/maillogo.png" style="height: 4rem;" alt=""></a>  
-            </div> -->
 
         </div>
     </main>
