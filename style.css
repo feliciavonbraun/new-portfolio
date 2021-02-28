@@ -5,6 +5,8 @@ html {
 body {
     margin: 0; 
     background: #6C5151;
+    transition: opacity 1.5s ease;
+
 }
 
 /* #region Header */
@@ -37,6 +39,7 @@ a:hover {
     position: fixed;
     top: 1rem;
     right: 1rem;
+    z-index: 100;
 }
   
 .circular-menu .floating-btn {
@@ -95,6 +98,10 @@ a:hover {
     padding: 0;
     margin: 0;
 }
+/* .items-wrapper {
+    display:none;
+
+} */
   
 .circular-menu .menu-item {
     position: absolute;
@@ -112,7 +119,15 @@ a:hover {
     line-height: 3;
     /* background-color: hsla(0,0%,0%,.1); */
     transition: transform .3s ease, background .2s ease;
+
 }
+/* .floating-btn {
+    overflow: hidden;
+} */
+/* .circular-menu.active::after {
+    overflow:unset;
+} */
+
   
 /* .menu-item:hover {
     background: blueviolet;
@@ -137,8 +152,6 @@ a:hover {
 .circular-menu.active .menu-item:nth-child(4) {
     transform: translate3d(-0.1em,12em,0);
 }
-
-
 /* #endregion */
 
 /*#region Project */
@@ -215,6 +228,7 @@ a:hover {
     /* height: 10rem; */
     position: relative;
     display: inline-block;
+
 }
 .card .img-top {
     display: none;
@@ -225,8 +239,8 @@ a:hover {
 }
 .card:hover .img-top {
     display: inline;
-}
 
+}
 
 /*#endregion  */
 
