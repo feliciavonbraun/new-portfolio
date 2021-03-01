@@ -1,19 +1,29 @@
 :root {
     /* ändra detta till mina färger */
-    --clr-dark-purple: #593267;
-    --clr-light-purple: #7866EA;
-    --clr-purple: #5A3383;
-    --clr-yellow: #FFAF4F;
-    --clr-orange: #ED733F;
+    --clr-background: #6C5151;
+    --clr-red: #673030;
+    --clr-brown: #684040;
+    --clr-yellow: #A3793C;
+    --clr-dirty-yellow: #A4754A;
+    --clr-whiteish: #C4C4C4; 
 }
 
 html {
     scroll-behavior: smooth;
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
+    /* font-family: 'Source Code Pro', monospace; */
+    /* font-family: 'Spartan', sans-serif; */
+    font-family: 'Saira Condensed', sans-serif;
+
 }
 body {
     margin: 0; 
     background: #6C5151;
+}
+
+h1, h2 {
+    letter-spacing: 3px;
+    color: var(--clr-red)
 }
 
 /* #region Header */
@@ -23,13 +33,11 @@ header {
 }
 
 h1 {
-    color: rgb(134, 91, 121);
     font-size: 5rem;
     margin: 5rem 0 0 3rem;
 }
 
 .myTitle {
-    color: rgb(134, 91, 121);
     font-size: 1.2rem;
     margin: 0 0 0 3rem;
     line-height: 0;
@@ -54,7 +62,7 @@ a:hover {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: #673030;
+    background-color: var(--clr-red);
     box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);  
     /* color: hsl(0, 0%, 100%); */
     text-align: center;
@@ -92,7 +100,7 @@ a:hover {
     top: 0;
     right: 0;
     z-index: -2;
-    background-color: #673030;
+    background-color: var(--clr-red);
     transition: all .3s ease;
 }
   
@@ -117,7 +125,7 @@ a:hover {
     z-index: -1;
     display: block;
     text-decoration: none;
-    color: white;
+    color: var(--clr-whiteish);
     font-size: 1rem;
     width: 3rem;
     height: 3rem;
@@ -195,8 +203,8 @@ a:hover {
     text-align: center;
 }
 .projectTitle {
-    background: #673030;
-    color: white;
+    background: var(--clr-red);
+    color: var(--clr-whiteish);
     font-size: 16px;
     padding: 16px 32px;
 }
@@ -268,7 +276,7 @@ a:hover {
 }
 
 .aboutText {
-    background: paleturquoise;
+    background: rgba(255, 255, 255, 0.55);
     padding: 1rem;
     position: absolute;
     top: 50%;
