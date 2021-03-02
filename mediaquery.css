@@ -1,0 +1,30 @@
+@media (max-width: 950px) {
+
+    /* Projects */
+    .projectArea {
+        margin: 0;
+    }
+
+    /* About */
+    .about1, .about2, .about3, .about4 {
+        margin: 0;
+    
+    }
+    .aboutTitle {
+        position: unset;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .card {
+        width: 100%;
+
+    }
+
+    /* Skills */
+    .skillsArea {
+        flex-wrap: wrap;
+        padding: 1rem;
+
+    }
+}

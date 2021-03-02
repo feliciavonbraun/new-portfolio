@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contactFigma.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <!-- <link rel="stylesheet" href="contactFigma.css"> -->
     <!-- <link rel="stylesheet" href="contactRelative.css"> -->
     <script defer src="JS/navBar.js"></script>
     <script defer src="JS/testimonials.js"></script>
@@ -31,14 +32,18 @@
             <menu class="items-wrapper">
               <a href="#projects" class="menu-item fa">Projects</a>
               <a href="#about" class="menu-item fa">About</a>
-              <a href="#testimonials" class="menu-item fa ">Testimonial</a>
+              <a href="#skills" class="menu-item fa ">Skills</a>
               <a href="#contact" class="menu-item fa fa-linkedin">Contact</a>
             </menu>
         </div>
 
-        <div>
-            <h1 class="flex">Felicia von Braun </h1>
-            <h2 class="myTitle">Front End Developer</h2>
+        <div>            
+            <h1 class="flex center ">FELICIA VON BRAUN </h1>
+            <div class="flex ">
+                <hr class="line">
+                <h2 class="myTitle">FRONTEND DEVELOPER</h2>
+                <hr class="line">
+            </div>
         </div>
     </header>
     <main>
@@ -99,7 +104,13 @@
                 <div class="flexEnd" >
                     <div class="about1 card" style="background: lightsalmon;">
                         <img src="assets/photos/malta-s2.jpeg" alt="Card Back" width="100%">
-                        <img src="assets/photos/malta.jpeg" class="img-top" alt="Card Front" height="100%">
+                        <div class="img-top">
+                            <img src="assets/photos/malta.jpeg" alt="Card Front" width="100%">
+                            <p class="aboutText">
+                                I have been living and working on Malta for 1.5 years. 
+                                Which was so much fun and I learned so much,  a great experience. 
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -133,9 +144,12 @@
                     <img src="assets/photos/temp-s2.jpeg" alt="Card Back" width="100%">
                     <div class="img-top">
                         <img src="assets/photos/temp.jpeg"  alt="Card Front" width="100%">
-                        <a href="./ProfileCV.pdf" class="aboutText" target="_blank" rel="noopener">
-                            View CV... Here you can find and print a PDF with my CV and personal letter.
-                        </a>
+                        <p class="aboutText">
+                            <a href="./assets/Feliciavonbraun.pdf" target="_blank" rel="noopener">
+                                Here
+                            </a> 
+                            you can find and print a PDF with my CV and personal letter.
+                        </p>
                     </div>
                     
                 </div>
@@ -143,12 +157,11 @@
         </div>
 
         <!-- TESTIMONIALS -->
-        <div class="testimonailsSlideshow">
+        <!-- <div class="testimonailsSlideshow">
 
             <h2 id="testimonials">Testimonials</h2>
 
             <div class="center aboutSlides fade">
-                <!-- <img src="images/malta.jpeg" alt="Streets of Malta" style="width:50%"> -->
                 <div class="center testimonailsText">
                     I have been living and working on Malta for 1.5 years. Which was so much fun and I learned so much,  a great experience. 
                 </div>
@@ -157,19 +170,16 @@
                 <div class="center testimonailsText">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </div>
-                <!-- <img src="images/traveling.jpeg" alt="Felicia exploring" style="width: 50%"> -->
             </div>
             <div class="center aboutSlides fade ">
-                <!-- <img src="images/nature.jpg" alt="Felicias mom between fields" style="width:50%"> -->
                 <div class="center testimonailsText">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, at. Architecto fugit quis neque voluptatem voluptate minima nulla omnis alias facere ex, repellendus quaerat? Perspiciatis dolorem hic modi fuga ab.
                 </div>
             </div>
             <div class="center aboutSlides fade ">
                 <div class="center testimonailsText">
-                    Here you can find and print a PDF with my CV and personal letter. </br>
+                    Felicia har en stor pliktkänsla, enorm arbetskapacitet och har ett gott humör och stort tålamod och har med sitt engangemang löst sin arbetsuppgift med bravur. Utöver detta är Felicia en mycket social och omtyckt medarbetare, som vi varmt kan rekommendera till kommande arbetsgivare. 
                 </div>
-                <!-- <img src="images/temp.jpeg" style="width:50%"> -->
             </div>
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -181,28 +191,50 @@
                 <span class="dot" onclick="currentSlide(3)"></span> 
                 <span class="dot" onclick="currentSlide(4)"></span> 
             </div>
-        </div>
+        </div> -->
 
         <!-- SKILLS -->
-        <div class="skillsArea flex center">
-            <div class ="skill" style="background: blue;">
-                <img src="./assets/logos/html.png" alt="">
+        <div id="skills" class="skillsArea " style="background: burlywood;">
+            <div class="flex column">
+                <h2 class="skillsHeader">S</h2>
+                <h2 class="skillsHeader">K</h2>
+                <h2 class="skillsHeader">I</h2>
+                <h2 class="skillsHeader">L</h2>
+                <h2 class="skillsHeader">L</h2>
+                <h2 class="skillsHeader">S</h2>
             </div>
-            <div class ="skill" style="background: blue;">
-                <img src="./assets/logos/css2.png" alt="">
+       
+            <div class ="skill">
+                <img src="./assets/logos/html.png" width="100%" alt="">
             </div>
-            <div class ="skill" style="background: blue;">
-                <img src="./assets/logos/js2.png" alt="">
+            <div class ="skill">
+                <img src="./assets/logos/css2.png" width="100%"  alt="">
             </div>
-            <div class ="skill" style="background: blue;">
-                <img src="./assets/logos/react.png" alt="">
+            <div class ="skill">
+                <img src="./assets/logos/js.png" width="100%" alt="">
+            </div>
+            <div class ="skill">
+                <img src="./assets/logos/ts-svart.png" width="100%" alt="">
+            </div>
+            <div class ="skill">
+                <img src="./assets/logos/react.png" width="100%" alt="">
             </div>
         </div>
 
         <!-- CONTACT -->
-        <div class="contactArea" style="background: darkgrey;">
-            
-            <div class="yo">
+        <div class="contactArea"">
+            <div width="100%" style="background: grey;">
+
+                <img src="/assets/Component 1.png" width="100%" alt="">
+            </div>
+            <div class="mailPosition">
+                <!-- <a href="mailto:feliciavonbraun@hotmail.com?subject=Front End Developer"> <img src="assets/logos/maillogo.png" class="imgZoom" style="height: 4rem;" alt="E-mail me"></a>   -->
+
+            </div>
+
+
+
+            <!-- <div class="testing">
 
                 <div id="circle1" class="circle1 flex center">
     
@@ -222,7 +254,7 @@
                 <div class="circle6 flex center">
                     <a href="mailto:feliciavonbraun@hotmail.com?subject=Front End Developer"> <img src="assets/logos/maillogo.png" class="imgZoom" style="height: 4rem;" alt="E-mail me"></a>  
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </main>
