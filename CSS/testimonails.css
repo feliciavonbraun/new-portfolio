@@ -1,0 +1,81 @@
+.testimonailsSlideshow {
+    background: chartreuse;
+    padding:  0 3rem; 
+    position: relative;
+    height: 10rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonailSlide {
+    background: rgb(134, 91, 121);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 5rem;
+}
+  
+.testimonailsText {
+    padding: 1rem;
+}
+
+/* Next & previous buttons. */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    /* user-select: none; */
+}
+  
+/* Position the "next button" to the right */
+.prev {
+    left: 11rem;
+}
+.next {
+    right: 11rem;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

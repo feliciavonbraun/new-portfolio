@@ -1,44 +1,86 @@
 @media (max-width: 950px) {
 
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    /* Projects */
-    .projectArea {
-        margin: 0;
-    }
-
-    /* About */
-    .about1, .about2, .about3, .about4 {
-        margin: 0;
-    
-    }
-    .aboutTitle {
-        position: unset;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        font-size: 1.5rem;
-    }
-    .card {
-        width: 100%;
-
-    }
-
-    /* Skills */
-    .skillsArea {
+    h1 {
+        font-size: 3rem;
         padding: 1rem;
-
+        padding-top: 6rem;
+        text-align: center;
     }
-    .bigSkillsHeader{
+    
+    .myTitle {
+        letter-spacing: 4px;
+    }
+
+    .line {
         display: none;
     }
-    .smallSkillHeader {
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    h2 {
+        font-size: 1.5rem;
+        /* margin-bottom: 0; */
+    }
+
+    /* Nav circle  */
+
+    .circular-menu .floating-btn {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2.6;
+    }
+    .circular-menu .floating-btn i {
+        font-size: 1.3em;
+    }
+    .circular-menu:after {
+        width: 2rem;
+        height: 2rem;
+    }
+    .circular-menu .menu-item {
+        width: 1rem;
+        height: 1rem;
+        font-size: 0.6rem;
+    }
+
+    /* w h 3 rem  */
+    /* .circular-menu.active .menu-item:nth-child(1) {
+        transform: translate3d(-7.3rem, 0rem, 0)
+    }
+
+    .circular-menu.active .menu-item:nth-child(2) {
+        transform: translate3d(-6.9rem, 2.5rem, 0);
+    }
+      
+    .circular-menu.active .menu-item:nth-child(3) {
+        transform: translate3d(-5.5rem, 5rem, 0);
+    }
+      
+    .circular-menu.active .menu-item:nth-child(4) {
+        transform: translate3d(-3.1rem, 6.7rem, 0);
+    } */
+
+    /* w h 2rem */
+    .circular-menu.active .menu-item:nth-child(1) {
+        transform: translate3d(-4.3rem, -1rem, 0)
+    }
+
+    .circular-menu.active .menu-item:nth-child(2) {
+        transform: translate3d(-4rem, 1rem, 0);
+    }
+      
+    .circular-menu.active .menu-item:nth-child(3) {
+        transform: translate3d(-3rem, 3rem, 0);
+    }
+      
+    .circular-menu.active .menu-item:nth-child(4) {
+        transform: translate3d(-0.8rem, 4rem, 0);
+    }
+    
+    /* Skills */
+    
+
+}
+
+@media (max-width: 550px) {
+    .skill {
+        height: 3rem;
     }
 }
