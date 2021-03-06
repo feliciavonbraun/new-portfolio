@@ -1,19 +1,10 @@
+
 .contactArea {
-    background: teal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     padding: 1rem;
     width: 100%;   
-}
-
-.testing {
-    background: chartreuse;
-    position: relative;
-    width: 100%;
-    padding: 1rem;
     height: 40rem; 
+    background: pink;
 }
 
 .imgZoom:hover {
@@ -26,109 +17,281 @@
     transform: translate(-50%, -50%);
 }
 
+:root {
+    --height1: 287px;
+    --width1: 287px;
+
+    --height2: 365px;
+    --width2: 365px;
+
+    --height3: 375px;
+    --width3: 375px;
+
+    --height4: 300px;
+    --width4: 300px;
+
+    --height5: 323px;
+    --width5: 323px;
+
+    --height6: 357px;
+    --width6: 357px;
+}
+
 .circle1 {
     background:var(--clr-yellow);
-    height: 287px;
-    width: 287px;
+    /* height: 287px;
+    width: 287px; */
     left: 45%;
     top: 25%;
+    height: var(--height1);
+    width: var(--width1);
 }
 
 /* vit */
 .circle2 {
     background: var(--clr-whiteish);
-    height: 365px;
-    width: 365px;
+    /* height: 365px;
+    width: 365px; */
     left: 50%;
     top: 70%;
+    height: var(--height2);
+    width: var(--width2);
 }
 
 /* röd github */
 .circle3 {
     background: var(--clr-red);
-    height: 375px;
-    width: 375px;
+    /* height: 375px;
+    width: 375px; */
     left: 30%;
     top: 50%;   
+    height: var(--height3);
+    width: var(--width3);
 }
 
 /* contact */
 .circle4 {
     background: var(--clr-background);
-    height: 300px;
-    width: 300px;
+    /* height: 300px;
+    width: 300px; */
     left: 50%;
     top: 50%;  
+    height: var(--height4);
+    width: var(--width4);
 }
 
 /* linked in */
 .circle5 {
     background: var(--clr-brown);
-    height: 323px;
-    width: 323px;
+    /* height: 323px;
+    width: 323px; */
     left: 70%;
     top: 30%;  
-
+    height: var(--height5);
+    width: var(--width5);
 }
 
 /*   mail*/
 .circle6 {
     background: var(--clr-dirty-yellow);
-    height: 357px;
-    width: 357px;
+    /* height: 357px;
+    width: 357px; */
     left: 75%;
     top: 60%; 
+    height: var(--height6);
+    width: var(--width6);
 }
+
 
 /* MEDIA QUERY  */
 @media (max-width: 950px) {
     .circle1 {
-        height: 187px;
-        width: 187px;
+        /* height: 187px;
+        width: 187px; */
         left: 45%;
         top: 30%;
+        height: calc(var(--height1) - 100px);
+        width: calc(var(--width1) - 100px);
     }
     
     /* vit */
     .circle2 {
-        height: 265px;
-        width: 265px;
+        /* height: 265px;
+        width: 265px; */
         left: 50%;
         top: 70%;
+        height: calc(var(--height2) - 100px);
+        width: calc(var(--width2) - 100px);
     }
     
     /* röd github */
     .circle3 {
-        height: 275px;
-        width: 275px;
+        /* height: 275px;
+        width: 275px; */
         left: 30%;
         top: 50%;   
+        height: calc(var(--height3) - 100px);
+        width: calc(var(--width3) - 100px);
     }
     
     /* contactsymbol */
     .circle4 {
-        height: 200px;
-        width: 200px;
+        /* height: 200px;
+        width: 200px; */
         left: 50%;
         top: 50%;  
+        height: calc(var(--height4) - 100px);
+        width: calc(var(--width4) - 100px);
     }
     
     /* linked in */
     .circle5 {
-        height: 223px;
-        width: 223px;
+        /* height: 223px;
+        width: 223px; */
         left: 65%;
         top: 35%;  
+        height: calc(var(--height5) - 100px);
+        width: calc(var(--width5) - 100px);
+    }
+    
+    /* mail*/
+    .circle6 {
+        /* height: 257px;
+        width: 257px; */
+        left: 69%;
+        top: 60%; 
+        height: calc(var(--height6) - 100px);
+        width: calc(var(--width6) - 100px);
+    }
+}
+
+@media (max-width: 700px) {
+    .testing {
+        height: 20rem;
+    }
+    .circle1 {
+        /* height: 87px;
+        width: 87px; */
+        left: 45%;
+        top: 30%;
+        height: calc(var(--height1) - 200px);
+        width: calc(var(--width1) - 200px);
+    }
+    
+    /* vit */
+    .circle2 {
+        /* height: 165px;
+        width: 165px; */
+        left: 50%;
+        top: 70%;
+        height: calc(var(--height2) - 200px);
+        width: calc(var(--width2) - 200px);
+    }
+    
+    /* röd github */
+    .circle3 {
+        /* height: 175px;
+        width: 175px; */
+        left: 30%;
+        top: 50%;   
+        height: calc(var(--height3) - 200px);
+        width: calc(var(--width3) - 200px);
+    }
+    
+    /* contactsymbol */
+    .circle4 {
+        /* height: 100px;
+        width: 100px; */
+        left: 50%;
+        top: 50%;  
+        height: calc(var(--height4) - 200px);
+        width: calc(var(--width4) - 200px);
+    }
+    
+    /* linked in */
+    .circle5 {
+        /* height: 123px;
+        width: 123px; */
+        left: 65%;
+        top: 35%;
+        height: calc(var(--height5) - 200px);
+        width: calc(var(--width5) - 200px);
     
     }
     
     /* mail*/
     .circle6 {
-        height: 257px;
-        width: 257px;
+        /* height: 157px;
+        width: 157px; */
         left: 69%;
-        top: 60%; 
+        top: 60%;
+        height: calc(var(--height6) - 200px);
+        width: calc(var(--width6) - 200px);
     }
+}
 
+@media (max-width: 350px) {
 
+    .testing {
+        height: 10rem;
+    }
+    .circle1 {
+        /* height: 87px;
+        width: 87px; */
+        left: 45%;
+        top: 30%;
+        height: calc(var(--height1) - 250px);
+        width: calc(var(--width1) - 250px);
+    }
+    
+    /* vit */
+    .circle2 {
+        /* height: 165px;
+        width: 165px; */
+        left: 50%;
+        top: 70%;
+        height: calc(var(--height2) - 2050px);
+        width: calc(var(--width2) - 250px);
+    }
+    
+    /* röd github */
+    .circle3 {
+        /* height: 175px;
+        width: 175px; */
+        left: 30%;
+        top: 50%;   
+        height: calc(var(--height3) - 250px);
+        width: calc(var(--width3) - 250px);
+    }
+    
+    /* contactsymbol */
+    .circle4 {
+        /* height: 100px;
+        width: 100px; */
+        left: 50%;
+        top: 50%;  
+        height: calc(var(--height4) - 250px);
+        width: calc(var(--width4) - 250px);
+    }
+    
+    /* linked in */
+    .circle5 {
+        /* height: 123px;
+        width: 123px; */
+        left: 65%;
+        top: 35%;
+        height: calc(var(--height5) - 250px);
+        width: calc(var(--width5) - 250px);
+    
+    }
+    
+    /* mail*/
+    .circle6 {
+        /* height: 157px;
+        width: 157px; */
+        left: 69%;
+        top: 60%;
+        height: calc(var(--height6) - 250px);
+        width: calc(var(--width6) - 250px);
+    }
 }

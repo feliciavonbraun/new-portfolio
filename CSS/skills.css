@@ -1,5 +1,5 @@
 .skillsArea {
-    display: flex;
+    /* display: flex; */
     padding: 1rem 3rem;
     justify-content: space-between;
     align-items: center;
@@ -14,13 +14,13 @@
 .bigSkillsHeader{
     display: block;
 }
-.smallSkillHeader{
+.smallSkillsHeader{
     display: none;
 }
 
 .skill {
     border-radius: 1rem;
-    background: var(--clr-yellow);
+    background: var(--clr-red);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,15 +35,20 @@
     .bigSkillsHeader{
         display: none;
     }
-    .smallSkillHeader {
+    .smallSkillsHeader {
         display: block;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 0;
     }
     .skill {
         width: 17%;
         margin: 0.1rem;
         padding: 0.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .skill {
+        height: 3rem;
     }
 }

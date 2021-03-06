@@ -1,5 +1,4 @@
 :root {
-    /* ändra detta till mina färger */
     --clr-background: #6C5151;
     --clr-red: #673030;
     --clr-brown: #684040;
@@ -19,7 +18,7 @@ html {
 
 body {
     margin: 0; 
-    background: #6C5151;
+    background: var(--clr-background);
 }
 
 h1, h2 {
@@ -61,48 +60,18 @@ hr.line {
 
 /* #endregion */
 
-/*#region Contact */
-.bildertest {
-    background: hotpink;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1000px;
-    width: 100%;
-    /* min-width: 800px; */
-    
+.material-icons {
+    font-size: 2rem;
 }
-
-/* .mailPosition{
-    position: absolute;
-    margin-left: 24rem;
-    margin-top: 13rem;
-    background: chartreuse;
-}
-
-.linkedinPosition {
-    position: absolute;
-    height: 100%;
-    margin-left: 17%;
-    margin-top: 70%;
-} */
-
-/*#endregion */
-
-/*#region footer */
-footer {
-    background: grey;
-}
-
 footer > a{
-    height: 2rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    color: var(--clr-red);
 }
-/*#endregion */
+footer > a:hover {
+    color: var(--clr-whiteish);
+}
 
 /* REUSABLE CLASSES  */
-
 .flex {
     display: flex;
 }

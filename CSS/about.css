@@ -1,7 +1,6 @@
 .aboutArea {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    background: red;
     width: 100%;
 }
 
@@ -27,13 +26,11 @@
 
 .card {
     width: 35rem;
-    /* height: 10rem; */
     position: relative;
     /* display: inline-block; */
 }
 
 .card .img-top {
-    /* display: none; */
     visibility: hidden;
     opacity: 0;
     position: absolute;
