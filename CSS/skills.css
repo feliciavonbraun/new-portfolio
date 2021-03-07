@@ -20,7 +20,7 @@
 
 .skill {
     border-radius: 1rem;
-    background: var(--clr-red);
+    background: var(--clr-brown);
     display: flex;
     justify-content: center;
     align-items: center;

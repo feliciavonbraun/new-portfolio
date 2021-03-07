@@ -11,12 +11,6 @@
     transform: scale(1.3);
 }
 
-.circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
-    position: absolute;
-    border-radius: 100rem;
-    transform: translate(-50%, -50%);
-}
-
 :root {
     --height1: 287px;
     --width1: 287px;
@@ -35,6 +29,12 @@
 
     --height6: 357px;
     --width6: 357px;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+    position: absolute;
+    border-radius: 100rem;
+    transform: translate(-50%, -50%);
 }
 
 .circle1 {
@@ -166,7 +166,7 @@
 }
 
 @media (max-width: 700px) {
-    .testing {
+    .contactArea {
         height: 20rem;
     }
     .circle1 {
@@ -232,7 +232,7 @@
 
 @media (max-width: 350px) {
 
-    .testing {
+    .contactArea {
         height: 10rem;
     }
     .circle1 {

@@ -57,6 +57,14 @@
     transform: translate(-50%, -50%);
 }
 
+.aboutText > a {
+    color: black;
+    text-decoration: none;
+}
+.aboutText > a:hover {
+    color: var(--clr-whiteish);
+}
+
 @media (max-width: 950px) {
     .about1, .about2, .about3, .about4 {
         margin: 0;
