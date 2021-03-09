@@ -111,16 +111,16 @@ a:hover {
 @media (max-width: 950px) {
 
     .circular-menu .floating-btn {
-        width: 2rem;
-        height: 2rem;
-        line-height: 2.6;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3.6;
     }
     .circular-menu .floating-btn i {
         font-size: 1.3em;
     }
     .circular-menu:after {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
     }
     .circular-menu .menu-item {
         width: 1rem;
@@ -128,7 +128,7 @@ a:hover {
         font-size: 0.6rem;
     }
     /* w h 2rem */
-    .circular-menu.active .menu-item:nth-child(1) {
+    /* .circular-menu.active .menu-item:nth-child(1) {
         transform: translate3d(-4.3rem, -1rem, 0)
     }
 
@@ -142,5 +142,22 @@ a:hover {
       
     .circular-menu.active .menu-item:nth-child(4) {
         transform: translate3d(-0.8rem, 4rem, 0);
+    } */
+
+    /* w h 3 rem  */
+    .circular-menu.active .menu-item:nth-child(1) {
+        transform: translate3d(-7.3rem, 0rem, 0)
+    }
+
+    .circular-menu.active .menu-item:nth-child(2) {
+        transform: translate3d(-6.9rem, 2.5rem, 0);
+    }
+      
+    .circular-menu.active .menu-item:nth-child(3) {
+        transform: translate3d(-5.5rem, 5rem, 0);
+    }
+      
+    .circular-menu.active .menu-item:nth-child(4) {
+        transform: translate3d(-3.1rem, 6.7rem, 0);
     }
 }

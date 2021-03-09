@@ -4,7 +4,6 @@
     padding: 1rem;
     width: 100%;   
     height: 40rem; 
-    background: pink;
 }
 
 .imgZoom:hover {
@@ -41,10 +40,11 @@
     background:var(--clr-yellow);
     /* height: 287px;
     width: 287px; */
-    left: 45%;
-    top: 25%;
+    left: 47%;
+    top: 23%;
     height: var(--height1);
     width: var(--width1);
+    /* height: calc(var(--height1) + 100px); */
 }
 
 /* vit */
@@ -63,7 +63,7 @@
     background: var(--clr-red);
     /* height: 375px;
     width: 375px; */
-    left: 30%;
+    left: 35%;
     top: 50%;   
     height: var(--height3);
     width: var(--width3);
@@ -85,7 +85,7 @@
     background: var(--clr-brown);
     /* height: 323px;
     width: 323px; */
-    left: 70%;
+    left: 62%;
     top: 30%;  
     height: var(--height5);
     width: var(--width5);
@@ -96,14 +96,80 @@
     background: var(--clr-dirty-yellow);
     /* height: 357px;
     width: 357px; */
-    left: 75%;
+    left: 66%;
     top: 60%; 
     height: var(--height6);
     width: var(--width6);
 }
 
-
 /* MEDIA QUERY  */
+@media (max-width: 1300px) {
+    .circle1 {
+        background:var(--clr-yellow);
+        /* height: 287px;
+        width: 287px; */
+        left: 45%;
+        top: 25%;
+        height: var(--height1);
+        width: var(--width1);
+    }
+    
+    /* vit */
+    .circle2 {
+        background: var(--clr-whiteish);
+        /* height: 365px;
+        width: 365px; */
+        left: 50%;
+        top: 70%;
+        height: var(--height2);
+        width: var(--width2);
+    }
+    
+    /* röd github */
+    .circle3 {
+        background: var(--clr-red);
+        /* height: 375px;
+        width: 375px; */
+        left: 30%;
+        top: 50%;   
+        height: var(--height3);
+        width: var(--width3);
+    }
+    
+    /* contact */
+    .circle4 {
+        background: var(--clr-background);
+        /* height: 300px;
+        width: 300px; */
+        left: 50%;
+        top: 50%;  
+        height: var(--height4);
+        width: var(--width4);
+    }
+    
+    /* linked in */
+    .circle5 {
+        background: var(--clr-brown);
+        /* height: 323px;
+        width: 323px; */
+        left: 70%;
+        top: 30%;  
+        height: var(--height5);
+        width: var(--width5);
+    }
+    
+    /*   mail*/
+    .circle6 {
+        background: var(--clr-dirty-yellow);
+        /* height: 357px;
+        width: 357px; */
+        left: 75%;
+        top: 60%; 
+        height: var(--height6);
+        width: var(--width6);
+    }
+}
+
 @media (max-width: 950px) {
     .circle1 {
         /* height: 187px;
@@ -166,16 +232,13 @@
 }
 
 @media (max-width: 700px) {
-    .contactArea {
-        height: 20rem;
-    }
     .circle1 {
         /* height: 87px;
         width: 87px; */
-        left: 45%;
-        top: 30%;
-        height: calc(var(--height1) - 200px);
-        width: calc(var(--width1) - 200px);
+        left: 47%;
+        top: 37%;
+        height: calc(var(--height1) - 170px);
+        width: calc(var(--width1) - 170px);
     }
     
     /* vit */
@@ -183,7 +246,7 @@
         /* height: 165px;
         width: 165px; */
         left: 50%;
-        top: 70%;
+        top: 65%;
         height: calc(var(--height2) - 200px);
         width: calc(var(--width2) - 200px);
     }
@@ -192,10 +255,10 @@
     .circle3 {
         /* height: 175px;
         width: 175px; */
-        left: 30%;
+        left: 25%;
         top: 50%;   
-        height: calc(var(--height3) - 200px);
-        width: calc(var(--width3) - 200px);
+        height: calc(var(--height3) - 210px);
+        width: calc(var(--width3) - 210px);
     }
     
     /* contactsymbol */
@@ -204,16 +267,16 @@
         width: 100px; */
         left: 50%;
         top: 50%;  
-        height: calc(var(--height4) - 200px);
-        width: calc(var(--width4) - 200px);
+        height: calc(var(--height4) - 180px);
+        width: calc(var(--width4) - 180px);
     }
     
     /* linked in */
     .circle5 {
         /* height: 123px;
         width: 123px; */
-        left: 65%;
-        top: 35%;
+        left: 73%;
+        top: 42%;
         height: calc(var(--height5) - 200px);
         width: calc(var(--width5) - 200px);
     
@@ -223,10 +286,10 @@
     .circle6 {
         /* height: 157px;
         width: 157px; */
-        left: 69%;
-        top: 60%;
-        height: calc(var(--height6) - 200px);
-        width: calc(var(--width6) - 200px);
+        left: 76%;
+        top: 59%;
+        height: calc(var(--height6) - 210px);
+        width: calc(var(--width6) - 210px);
     }
 }
 

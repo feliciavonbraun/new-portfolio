@@ -27,6 +27,12 @@ h1, h2 {
     font-size: 2rem;
 }
 
+.projectArea, .aboutArea, .skillsArea, .contactArea {
+    opacity: 0;
+    /* transition: opacity 3s; */
+    transition: opacity 2s ease-in-out;
+}
+
 /* #region Header */
 header {
     height: 100vh;
@@ -42,7 +48,7 @@ h1 {
 
 hr.line {
     border: 2px solid var(--clr-red);
-    width: 30%;
+    width: 20%;
     margin: auto;
     background: linear-gradient(to right, transparent, #673030, transparent);
     /* margin-block-start: 0;
