@@ -11,21 +11,20 @@
     margin: 0;
 }
 
-.about1, .about2, .about3, .about4 {
+.card {
     display: flex;
     padding: 1rem;
+    border-radius: 5rem;
+    width: 35rem;
+    position: relative;
+    /* display: inline-block; */
 }
+
 .about1, .about3 {
     margin-right: 3rem;
 }
 .about2, .about4 {
     margin-left: 3rem;   
-}
-
-.card {
-    width: 35rem;
-    position: relative;
-    /* display: inline-block; */
 }
 
 .card .img-top {
@@ -38,6 +37,9 @@
     z-index: 99;
     width: 100%;
 }
+.card > img, .img-top > img{
+    border-radius: .2rem;
+}
 
 .card:hover .img-top {
     display: inline;
@@ -47,18 +49,17 @@
 }
 
 .aboutText {
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(0, 0, 0, 0.468);
+    color: var(--text-clr);
     padding: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: .1rem;
 }
 
 @media (max-width: 950px) {
-    .about1, .about2, .about3, .about4 {
-        margin: 0;
-    }
     .aboutTitle {
         position: unset;
         display: flex;
@@ -69,5 +70,6 @@
     }
     .card {
         width: 100%;
+        margin: 0;
     }
 }

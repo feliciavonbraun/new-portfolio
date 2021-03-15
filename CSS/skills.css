@@ -1,11 +1,11 @@
 .skillsArea {
-    /* display: flex; */
     padding: 1rem 3rem;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
 }
+
 .skillsLetter {
     margin: 0;
     line-height: 1;
@@ -19,11 +19,11 @@
 }
 
 .skill {
-    border-radius: 1rem;
-    background: var(--clr-brown);
+    background: var(--object-clr);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: .5rem;
     width: 7rem;
     height: 7rem;
 }

@@ -37,7 +37,7 @@
 }
 
 .circle1 {
-    background:var(--clr-yellow);
+    background:var(--bubble-clr1);
     /* height: 287px;
     width: 287px; */
     left: 47%;
@@ -49,18 +49,18 @@
 
 /* vit */
 .circle2 {
-    background: var(--clr-whiteish);
+    background: var(--bubble-clr3);
     /* height: 365px;
     width: 365px; */
     left: 50%;
-    top: 70%;
+    top: 73%;
     height: var(--height2);
     width: var(--width2);
 }
 
 /* röd github */
 .circle3 {
-    background: var(--clr-red);
+    background: var(--text-clr);
     /* height: 375px;
     width: 375px; */
     left: 35%;
@@ -71,7 +71,7 @@
 
 /* contact */
 .circle4 {
-    background: var(--clr-background);
+    background: var(--bg-clr);
     /* height: 300px;
     width: 300px; */
     left: 50%;
@@ -82,7 +82,7 @@
 
 /* linked in */
 .circle5 {
-    background: var(--clr-brown);
+    background: var(--object-clr);
     /* height: 323px;
     width: 323px; */
     left: 62%;
@@ -93,7 +93,7 @@
 
 /*   mail*/
 .circle6 {
-    background: var(--clr-dirty-yellow);
+    background: var(--bubble-clr2);
     /* height: 357px;
     width: 357px; */
     left: 66%;
@@ -105,7 +105,6 @@
 /* MEDIA QUERY  */
 @media (max-width: 1300px) {
     .circle1 {
-        background:var(--clr-yellow);
         /* height: 287px;
         width: 287px; */
         left: 45%;
@@ -116,7 +115,6 @@
     
     /* vit */
     .circle2 {
-        background: var(--clr-whiteish);
         /* height: 365px;
         width: 365px; */
         left: 50%;
@@ -127,7 +125,6 @@
     
     /* röd github */
     .circle3 {
-        background: var(--clr-red);
         /* height: 375px;
         width: 375px; */
         left: 30%;
@@ -138,7 +135,6 @@
     
     /* contact */
     .circle4 {
-        background: var(--clr-background);
         /* height: 300px;
         width: 300px; */
         left: 50%;
@@ -149,7 +145,6 @@
     
     /* linked in */
     .circle5 {
-        background: var(--clr-brown);
         /* height: 323px;
         width: 323px; */
         left: 70%;
@@ -160,7 +155,6 @@
     
     /*   mail*/
     .circle6 {
-        background: var(--clr-dirty-yellow);
         /* height: 357px;
         width: 357px; */
         left: 75%;

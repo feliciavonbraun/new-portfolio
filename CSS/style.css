@@ -1,10 +1,24 @@
 :root {
-    --clr-background: #6C5151;
-    --clr-red: #673030;
-    --clr-brown: #684040;
-    --clr-yellow: #A3793C;
-    --clr-dirty-yellow: #A4754A;
-    --clr-whiteish: #C4C4C4; 
+    /* --bg-clr: #6C5151;
+    --text-clr: #673030;
+    --object-clr: #684040;
+    --bubble-clr1: #A3793C;
+    --bubble-clr2: #A4754A;
+    --bubble-clr3: #C4C4C4;  */
+    
+    /* --bg-clr: #373737;
+    --text-clr: #777777;
+    --object-clr: #684040;
+    --bubble-clr1: #B1A4A5;
+    --bubble-clr2: #A4754A;
+    --bubble-clr3: #C4C4C4;  */
+
+    --bg-clr: #373737;
+    --text-clr: #E7CEE3;
+    --object-clr: #B1A4A5;
+    --bubble-clr1: #777777;
+    --bubble-clr2: #FFE2D5;
+    --bubble-clr3: #FFDDB7; 
 }
 
 * {
@@ -18,12 +32,12 @@ html {
 
 body {
     margin: 0; 
-    background: var(--clr-background);
+    background: var(--bg-clr);
 }
 
 h1, h2 {
     letter-spacing: 3px;
-    color: var(--clr-red);
+    color: var(--text-clr);
     font-size: 2rem;
 }
 
@@ -66,15 +80,15 @@ hr.line {
 
 /* #endregion */
 
-.material-icons {
-    font-size: 2rem;
-}
 footer > a{
     padding: 1rem;
     color: var(--clr-red);
 }
 footer > a:hover {
     color: var(--clr-whiteish);
+}
+.material-icons {
+    font-size: 2rem;
 }
 
 /* REUSABLE CLASSES  */

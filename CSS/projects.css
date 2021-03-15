@@ -5,10 +5,16 @@
 }
 
 .projectTitle {
-    background: var(--clr-red);
-    color: var(--clr-whiteish);
+    background: var(--object-clr);
+    color: var(--text-clr);
     font-size: 16px;
+    letter-spacing: 1.5px;
     padding: 16px 32px;
+    border-radius: 0.1rem;
+}
+
+.projectTitle > a:hover, a:any-link{
+    text-decoration: none;
 }
 
 .projectContainer {
@@ -24,6 +30,7 @@
     /* height: auto; */
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 0.2rem;
 }
 
 .hoverEffects {
